@@ -1,3 +1,3 @@
-!function(i,n){"use strict";var o=o||{};o.meta=o||{},o.configuration=o.configuration||{},o.data=o.data||{},o.trick=o.trick||{},o.trick.hello=function(i){alert("hello"+i)},i.wizard=o}(window),function(i){"use strict";console.log("Inside file2!")}("undefined"!=typeof window&&window),function(i,n,o){"use strict";"function"==typeof n&&void 0!==n.amd&&n("wizard",[],function(){return i})}(window.wizard=window.wizard||{},window.define);
+!function(i,n){"use strict";var o=o||{};o.meta=o||{},o.configuration=o.configuration||{},o.data=o.data||{},o.trick=o.trick||{},o.trick.hello=function(i){alert("hello"+i)},i.wizard=o}(window),function(i){"use strict";console.log("Inside file2!")}("undefined"!=typeof window&&window),function(i,n){"use strict";"function"==typeof window.define&&void 0!==window.define.amd&&define("wizard",[],function(){return i.wizard})}("undefined"!=typeof window?window:this);
 
 //# source=wizard-script.js

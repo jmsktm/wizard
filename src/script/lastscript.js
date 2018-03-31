@@ -1,10 +1,10 @@
-(function (wizard, define, undefined) {
+(function (global, undefined) {
 
   'use strict';
-  
-  if(typeof(define) === "function" && define.amd !== undefined) {
+
+  if(typeof(window.define) === "function" && window.define.amd !== undefined) {
       define("wizard", [], function() {
-          return wizard;
+          return global.wizard;
       });
   }
-})(window.wizard = window.wizard || {}, window.define);
+})(typeof window !== 'undefined' ? window : this);
