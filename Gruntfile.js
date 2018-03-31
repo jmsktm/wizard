@@ -16,11 +16,11 @@ module.exports = function(grunt) {
 	    },
 	    script: {
 	      src: scripts,
-	      dest: 'build/js/wizard-script.js',
+	      dest: 'build/script/wizard-script.js',
 	    },
 	    style: {
 	      src: styles,
-	      dest: 'build/css/wizard-style.css',
+	      dest: 'build/style/wizard-style.css',
 	    }
 	  },
 	  watch: {
