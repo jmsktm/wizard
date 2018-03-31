@@ -7,7 +7,7 @@ module.exports = function(grunt) {
 	styles = [
 		"src/style/style1.css",
 		"src/style/style2.css"
-	]
+	];
 
 	grunt.initConfig({
 	  concat: {
@@ -32,13 +32,22 @@ module.exports = function(grunt) {
 		    files: ['src/style/**/*.css'],
 		    tasks: ['concat:style']
 		  }
+		},
+		jshint: {
+			options: {
+				strict : true,
+				laxbreak : true
+			},
+			script: {
+				src: ['src/script/**/*.js']
+			}
 		}
 	});
 
 	grunt.loadNpmTasks('grunt-contrib-concat');
 	grunt.loadNpmTasks('grunt-contrib-watch');
+	grunt.loadNpmTasks('grunt-contrib-jshint');
 
-	grunt.registerTask('dev', function() {
-		console.log('dev task');
-	})
+	grunt.registerTask('default', ['jshint', 'concat']);
+	grunt.registerTask('dev', ['default', 'watch']);
 }
