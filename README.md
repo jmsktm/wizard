@@ -14,7 +14,7 @@ Resources
 
 Versioning
 ----------
-Version is written as <major_version>.<minor_version>.<patch_version>  
+Version is written as `<major_version>.<minor_version>.<patch_version>`  
 
 * Bump major version: grunt bump_major
 * Bump minor version: grunt bump_minor
