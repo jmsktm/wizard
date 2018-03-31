@@ -15,9 +15,16 @@ module.exports = function(grunt) {
 	      dest: 'build/js/wizard.js',
 	    },
 	  },
+	  watch: {
+		  js: {
+		    files: ['src/js/**/*.js'],
+		    tasks: ['concat']
+		  }
+		}
 	});
 
 	grunt.loadNpmTasks('grunt-contrib-concat');
+	grunt.loadNpmTasks('grunt-contrib-watch');
 
 	grunt.registerTask('dev', function() {
 		console.log('dev task');
