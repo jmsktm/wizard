@@ -1,24 +1,36 @@
 module.exports = function(grunt) {
 
 	var scripts = [
-		"src/js/file1.js",
-		"src/js/file2.js"
-	];
+		"src/script/script1.js",
+		"src/script/script2.js"
+	],
+	styles = [
+		"src/style/style1.css",
+		"src/style/style2.css"
+	]
 
 	grunt.initConfig({
 	  concat: {
 	    options: {
-	      separator: ';\n',
+	      separator: '\n',
 	    },
-	    build: {
+	    script: {
 	      src: scripts,
-	      dest: 'build/js/wizard.js',
+	      dest: 'build/js/wizard-script.js',
 	    },
+	    style: {
+	      src: styles,
+	      dest: 'build/css/wizard-style.css',
+	    }
 	  },
 	  watch: {
-		  js: {
-		    files: ['src/js/**/*.js'],
-		    tasks: ['concat']
+		  script: {
+		    files: ['src/script/**/*.js'],
+		    tasks: ['concat:script']
+		  },
+		  style: {
+		    files: ['src/style/**/*.css'],
+		    tasks: ['concat:style']
 		  }
 		}
 	});
