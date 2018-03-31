@@ -11,6 +11,27 @@ module.exports = function(grunt) {
 	];
 
 	grunt.initConfig({
+		pkg: grunt.file.readJSON('package.json'),
+    version: {
+      patch: {
+        options: {
+          release: 'patch'
+        },
+        src: ['package.json']
+      },
+      minor: {
+        options: {
+          release: 'minor'
+        },
+        src: ['package.json']
+      },
+      major: {
+        options: {
+          release: 'major'
+        },
+        src: ['package.json']
+      }
+    },
 		jshint: {
 			options: {
 				strict : true,
@@ -62,12 +83,19 @@ module.exports = function(grunt) {
 		}
 	});
 
+  grunt.loadNpmTasks('grunt-version');
 	grunt.loadNpmTasks('grunt-contrib-concat');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-contrib-jshint');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-cssmin');
 
+  // Tasks for builds
 	grunt.registerTask('default', ['jshint', 'concat', 'uglify', 'cssmin']);
 	grunt.registerTask('dev', ['default', 'watch']);
+
+  // Tasks for version bump
+  grunt.registerTask('bump_patch', ['version:patch']);
+  grunt.registerTask('bump_minor', ['version:minor']);
+  grunt.registerTask('bump_major', ['version:major']);
 }
