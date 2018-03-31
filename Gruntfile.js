@@ -10,19 +10,45 @@ module.exports = function(grunt) {
 	];
 
 	grunt.initConfig({
+		jshint: {
+			options: {
+				strict : true,
+				laxbreak : true
+			},
+			script: {
+				src: ['src/script/**/*.js']
+			}
+		},
 	  concat: {
 	    options: {
 	      separator: '\n',
 	    },
 	    script: {
 	      src: scripts,
-	      dest: 'build/script/wizard-script.js',
+	      dest: 'build/script/wizard-script.js'
 	    },
 	    style: {
 	      src: styles,
-	      dest: 'build/style/wizard-style.css',
+	      dest: 'build/style/wizard-style.css'
 	    }
 	  },
+	  uglify: {
+	  	script: {
+	  		options: {
+	  			footer: '\n\n//# source=wizard-script.js'
+	  		},
+	  		src: '<%= concat.script.dest %>',
+	  		dest: 'build/script/wizard-script-min.js'
+	  	}
+	  },
+	  cssmin: {
+		  target: {
+		    files: [{
+		      src: '<%= concat.style.dest %>',
+		      dest: 'build/style/wizard-style-min.css'
+		    }]
+		  }
+		},
 	  watch: {
 		  script: {
 		    files: ['src/script/**/*.js'],
@@ -32,22 +58,15 @@ module.exports = function(grunt) {
 		    files: ['src/style/**/*.css'],
 		    tasks: ['concat:style']
 		  }
-		},
-		jshint: {
-			options: {
-				strict : true,
-				laxbreak : true
-			},
-			script: {
-				src: ['src/script/**/*.js']
-			}
 		}
 	});
 
 	grunt.loadNpmTasks('grunt-contrib-concat');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-contrib-jshint');
+	grunt.loadNpmTasks('grunt-contrib-uglify');
+	grunt.loadNpmTasks('grunt-contrib-cssmin');
 
-	grunt.registerTask('default', ['jshint', 'concat']);
+	grunt.registerTask('default', ['jshint', 'concat', 'uglify', 'cssmin']);
 	grunt.registerTask('dev', ['default', 'watch']);
 }
