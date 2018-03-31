@@ -1,8 +1,17 @@
-(function(global) {
-  
+(function(window, undefined) {
+
   'use strict';
 
-	console.log('Inside file1!');
-
-  if (true) console.log("single line command");
-})(typeof window !== 'undefined' ? window : this, undefined);
+  var wizard = wizard || {};
+  
+  wizard.meta = wizard || {};
+  wizard.configuration = wizard.configuration || {};
+  wizard.data = wizard.data || {};
+  wizard.trick = wizard.trick || {};
+  
+  wizard.trick.hello = function(name) {
+    alert('hello' + name);
+  };
+  
+  window.wizard = wizard;
+})(window);
