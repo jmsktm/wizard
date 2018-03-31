@@ -1,12 +1,25 @@
 module.exports = function(grunt) {
 
-	grunt.registerTask('speak', function() {
-		console.log("I'm speaking");
+	var scripts = [
+		"src/js/file1.js",
+		"src/js/file2.js"
+	];
+
+	grunt.initConfig({
+	  concat: {
+	    options: {
+	      separator: ';\n',
+	    },
+	    build: {
+	      src: scripts,
+	      dest: 'build/js/wizard.js',
+	    },
+	  },
 	});
 
-	grunt.registerTask('yell', function() {
-		console.log("I'm yelling");
-	});
+	grunt.loadNpmTasks('grunt-contrib-concat');
 
-	grunt.registerTask('default', ['speak', 'yell']);
+	grunt.registerTask('dev', function() {
+		console.log('dev task');
+	})
 }
