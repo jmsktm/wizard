@@ -11,7 +11,7 @@ Resources
 * **wizard-script-min.js**  
   <https://jmsktm.github.io/wizard/build/script/wizard-script-min.js>
 
-##### Script
+##### Style
 * **wizard-style.css**  
   <https://jmsktm.github.io/wizard/build/style/wizard-style.css>
 * **wizard-style-min.css**  

@@ -1,5 +1,22 @@
-.class1 {
-	background-color: red;
+.home .search-form {
+  background-image: url('https://images.unsplash.com/photo-1484249170766-998fa6efe3c0?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=4e87fd5abedcb81f9318f91e9efe90d1&auto=format&fit=crop&w=1958&q=80');
+  height: 400px;
+  background-size: cover;
+}
+
+.home .search-form__title {
+  padding-top: 50px;
+}
+
+.home .search-form__container {
+  background: #000 !important;
+  opacity: 0.85;
+  padding: 40px;
+  margin-top: 50px;
+}
+
+.home .search-form__label {
+  color: #fff;
 }
 .class2 {
 	background-color: blue;
