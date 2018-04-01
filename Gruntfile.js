@@ -87,6 +87,15 @@ module.exports = function(grunt) {
           port: grunt.option("port") || 3000,
           base: 'build/'
         }
+      },
+      site2: {
+        options: {
+          port: grunt.option("httpsPort") || 3001,
+          base: 'build/',
+          protocol: 'https',
+          key: grunt.file.read('certificates/server.key').toString(),
+          cert: grunt.file.read('certificates/server.crt').toString()
+        }
       }
     }
 	});

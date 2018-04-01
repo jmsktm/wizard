@@ -41,10 +41,10 @@ Running in `dev` mode
 ```
 grunt dev
 ```
-When running in `dev` mode, the server runs on port 3000 by default. To opt for a different port (say port 3000), run the below command:
+When running in `dev` mode, the server runs on http port 3000 and https port 3001. To opt for a different port, say port 8000 for http and 8001 for https, run the below command:
 
 ```
-grunt dev --port=3000
+grunt dev --port=8000 --httpsPort=8001
 ```
 
 Markdown viewer
