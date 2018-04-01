@@ -80,7 +80,15 @@ module.exports = function(grunt) {
 		    files: ['src/style/**/*.css'],
 		    tasks: ['concat:style']
 		  }
-		}
+		},
+    connect: {
+      site1: {
+        options: {
+          port: grunt.option("port") || 3000,
+          base: 'build/'
+        }
+      }
+    }
 	});
 
   grunt.loadNpmTasks('grunt-version');
@@ -89,10 +97,11 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-jshint');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-cssmin');
+  grunt.loadNpmTasks('grunt-contrib-connect');
 
   // Tasks for builds
 	grunt.registerTask('default', ['jshint', 'concat', 'uglify', 'cssmin']);
-	grunt.registerTask('dev', ['default', 'watch']);
+	grunt.registerTask('dev', ['default', 'connect', 'watch']);
 
   // Tasks for version bump
   grunt.registerTask('bump_patch', ['version:patch']);
