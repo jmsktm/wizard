@@ -68,7 +68,7 @@ module.exports = function(grunt) {
         options: {
           paths: ['build/style'],
           modifyVars: {
-            backgroundImage: '"https://ce801278c.cloudimg.io/width/1024/s/https://jmsktm.github.io/wizard/src/image/home/search/nepal-mountain.jpeg"'
+            backgroundImage: '"https://ce801278c.cloudimg.io/cdn/n/n/https://jmsktm.github.io/wizard/src/image/home/search/nepal-mountain.jpeg"'
           }
         },
         files: {
@@ -79,7 +79,7 @@ module.exports = function(grunt) {
         options: {
           paths: ['build/style'],
           modifyVars: {
-            backgroundImage: '"https://ce801278c.cloudimg.io/width/1024/s/https://jmsktm.github.io/wizard/src/image/home/search/vacation-at-beach.jpeg"'
+            backgroundImage: '"https://ce801278c.cloudimg.io/cdn/n/n/https://jmsktm.github.io/wizard/src/image/home/search/vacation-at-beach.jpeg"'
           }
         },
         files: {
@@ -90,7 +90,7 @@ module.exports = function(grunt) {
         options: {
           paths: ['build/style'],
           modifyVars: {
-            backgroundImage: '"https://ce801278c.cloudimg.io/width/1024/s/https://jmsktm.github.io/wizard/src/image/home/search/new-york.jpeg"'
+            backgroundImage: '"https://ce801278c.cloudimg.io/cdn/n/n/https://jmsktm.github.io/wizard/src/image/home/search/new-york.jpeg"'
           }
         },
         files: {
@@ -101,7 +101,7 @@ module.exports = function(grunt) {
         options: {
           paths: ['build/style'],
           modifyVars: {
-            backgroundImage: '"https://ce801278c.cloudimg.io/width/1024/s/https://jmsktm.github.io/wizard/src/image/home/search/las-vegas.jpeg"'
+            backgroundImage: '"https://ce801278c.cloudimg.io/cdn/n/n/https://jmsktm.github.io/wizard/src/image/home/search/las-vegas.jpeg"'
           }
         },
         files: {
