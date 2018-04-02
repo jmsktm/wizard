@@ -79,7 +79,7 @@ module.exports = function(grunt) {
         options: {
           paths: ['build/style'],
           modifyVars: {
-            backgroundImage: '"https://images.unsplash.com/photo-1453063574201-48d2ffe2e4c5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=36333d67b20110d898f2d39c00b74071&auto=format&fit=crop&w=1350&q=80"'
+            backgroundImage: '"https://images.unsplash.com/photo-1464221094918-aa79b0ad5a6e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6df97474ee9b84eb155a9d074f023d71&auto=format&fit=crop&w=1350&q=80"'
           }
         },
         files: {
