@@ -101,7 +101,7 @@ module.exports = function(grunt) {
         options: {
           paths: ['build/style'],
           modifyVars: {
-            backgroundImage: '"https://images.unsplash.com/photo-1470076892663-af684e5e15af?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=060facbee716072c04e2877eb2b550e0&auto=format&fit=crop&w=1217&q=80"'
+            backgroundImage: '"https://images.unsplash.com/photo-1516975698824-571e2c952dbd?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7497bb51bc14eaecf6c0ccb2e749a0cc&auto=format&fit=crop&w=1350&q=80"'
           }
         },
         files: {
