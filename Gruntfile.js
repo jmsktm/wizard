@@ -143,7 +143,7 @@ module.exports = function(grunt) {
           dest: 'build/style/wizard-style-wwwnewyorktravelus-min.css'
         }]
       },
-      common: {
+      wwwvegashotelsus: {
         files: [{
           src: 'build/style/wizard-style-wwwvegashotelsus.css',
           dest: 'build/style/wizard-style-wwwvegashotelsus-min.css'
