@@ -68,7 +68,7 @@ module.exports = function(grunt) {
         options: {
           paths: ['build/style'],
           modifyVars: {
-            backgroundImage: '"https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=38348a3f06ad1aac3c30d26af26040e1&auto=format&fit=crop&w=1955&q=80"'
+            backgroundImage: '"https://ce801278c.cloudimg.io/width/1024/s/https://jmsktm.github.io/wizard/src/image/home/search/nepal-mountain.jpeg"'
           }
         },
         files: {
@@ -79,7 +79,7 @@ module.exports = function(grunt) {
         options: {
           paths: ['build/style'],
           modifyVars: {
-            backgroundImage: '"https://images.unsplash.com/photo-1464221094918-aa79b0ad5a6e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6df97474ee9b84eb155a9d074f023d71&auto=format&fit=crop&w=1350&q=80"'
+            backgroundImage: '"https://ce801278c.cloudimg.io/width/1024/s/https://jmsktm.github.io/wizard/src/image/home/search/vacation-at-beach.jpeg"'
           }
         },
         files: {
@@ -90,7 +90,7 @@ module.exports = function(grunt) {
         options: {
           paths: ['build/style'],
           modifyVars: {
-            backgroundImage: '"https://images.unsplash.com/photo-1484249170766-998fa6efe3c0?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=4e87fd5abedcb81f9318f91e9efe90d1&auto=format&fit=crop&w=1958&q=80"'
+            backgroundImage: '"https://ce801278c.cloudimg.io/width/1024/s/https://jmsktm.github.io/wizard/src/image/home/search/new-york.jpeg"'
           }
         },
         files: {
@@ -101,7 +101,7 @@ module.exports = function(grunt) {
         options: {
           paths: ['build/style'],
           modifyVars: {
-            backgroundImage: '"https://images.unsplash.com/photo-1516975698824-571e2c952dbd?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7497bb51bc14eaecf6c0ccb2e749a0cc&auto=format&fit=crop&w=1350&q=80"'
+            backgroundImage: '"https://ce801278c.cloudimg.io/width/1024/s/https://jmsktm.github.io/wizard/src/image/home/search/las-vegas.jpeg"'
           }
         },
         files: {
