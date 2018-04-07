@@ -1,9 +1,10 @@
 module.exports = function(grunt) {
 
 	var scripts = [
+    "src/script/config.js",
 		"src/script/script1.js",
 		"src/script/script2.js",
-		"src/script/lastscript.js"
+		"src/script/define-wizard.js"
 	],
 	styles = [
 		"src/style/style1.less",

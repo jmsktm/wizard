@@ -47,6 +47,11 @@ When running in `dev` mode, the server runs on http port 3000 and https port 300
 grunt dev --port=8000 --httpsPort=8001
 ```
 
+Using RequireJS
+---------------
+`<script data-main="https://jmsktm.github.io/wizard/build/script/wizard-script-min" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.5/require.min.js"'></script>`
+
+
 Markdown viewer
 ---------------
 To view the markdown (README.md or otherwise), install the `markdown-preview` package.

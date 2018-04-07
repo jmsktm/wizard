@@ -1,6 +1,8 @@
 (function(global, undefined) {
 
   'use strict';
-  
-	console.log('Inside file2!');
+
+  define('wizard', function() {
+    return global.wizard;
+  });
 })(typeof window !== 'undefined' ? window : this);

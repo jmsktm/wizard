@@ -1,4 +1,4 @@
-(function(window, undefined) {
+(function(global, undefined) {
 
   'use strict';
 
@@ -13,5 +13,5 @@
     alert('hello' + name);
   };
   
-  window.wizard = wizard;
-})(window);
+  global.wizard = wizard;
+})(typeof window !== 'undefined' ? window : this);

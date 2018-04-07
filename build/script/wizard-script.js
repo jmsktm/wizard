@@ -1,4 +1,15 @@
-(function(window, undefined) {
+(function(global) {
+
+  'use strict';
+  
+  requirejs.config({
+    paths: {
+      jquery: 'https://code.jquery.com/jquery-3.3.1.min.js'
+    }
+  });
+})(typeof window !== 'undefined' ? window : this);
+
+(function(global, undefined) {
 
   'use strict';
 
@@ -13,21 +24,20 @@
     alert('hello' + name);
   };
   
-  window.wizard = wizard;
-})(window);
-(function(global) {
+  global.wizard = wizard;
+})(typeof window !== 'undefined' ? window : this);
+
+(function(global, undefined) {
 
   'use strict';
   
 	console.log('Inside file2!');
-})(typeof window !== 'undefined' ? window : this, undefined);
-(function (global, undefined) {
+})(typeof window !== 'undefined' ? window : this);
+(function(global, undefined) {
 
   'use strict';
 
-  if(typeof(window.define) === "function" && window.define.amd !== undefined) {
-      define("wizard", function() {
-          return global.wizard;
-      });
-  }
+  define('wizard', function() {
+    return global.wizard;
+  });
 })(typeof window !== 'undefined' ? window : this);
