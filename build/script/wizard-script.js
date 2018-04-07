@@ -12,9 +12,9 @@
 
   'use strict';
 
-  var wizard = wizard || {};
+  var wizard = global.wizard || {};
   
-  wizard.meta = wizard || {};
+  wizard.meta = wizard.meta || {};
   wizard.configuration = wizard.configuration || {};
   wizard.data = wizard.data || {};
   wizard.trick = wizard.trick || {};
